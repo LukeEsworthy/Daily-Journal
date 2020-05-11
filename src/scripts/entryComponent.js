@@ -16,8 +16,6 @@
 
 // journalEntryCollection.push(singleJournalEntry);
 
-
-
 const createJournalComponent = (journalEntryParam) => {
   return `
       <div class="journalEntryDate">${journalEntryParam.date}</div>
@@ -26,3 +24,5 @@ const createJournalComponent = (journalEntryParam) => {
       <div class="journalEntryMood">${journalEntryParam.mood}</div>
       `;
 };
+
+export default createJournalComponent;
