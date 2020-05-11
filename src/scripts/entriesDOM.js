@@ -1,3 +1,5 @@
+import createJournalComponent from "./entryComponent.js";
+
 function postToDOM(entriesArray) {
   let output = document.querySelector("#journalOutputField");
   for (let i = 0; i < entriesArray.length; i++) {
@@ -5,3 +7,5 @@ function postToDOM(entriesArray) {
     output.innerHTML += createJournalComponent(entry);
   }
 }
+
+export default postToDOM;
